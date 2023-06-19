@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style23.css">
+</head>
+<br>
+<body>
+    <div id="Container">
+        <div id="Titulo">
+           <h2>login</h2>
+        </div>
+    </div>
+    <div id="Formulario"></div>
+
+    <form> 
+        <table>
+            <td><label for="Nombre">Nombre:</label></td>
+            <td>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre Completo" required minlength="10" pattern="[A-Z-a-z]+"/>
+             </td>
+             <tr>
+                <td><label for="Password"></label>Contraseña:</td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="password" required minlength="8" maxlength="15"/>
+                </td>
+             </tr>
+            <tr>
+                <td><label for="Pasword2"></label>Confirmar..</td>
+            <td>
+                <input type="password" name="Password" id="Password" placeholder="Confirmar contraseña" required minlength="8" maxlength="15"/> 
+            </td>
+            </tr>
+
+            <tr>
+            <td><label for="email"></label>Correo</td>
+            <td>
+                <input type="email" name="email" id="email" placeholder="correo electronico" required/>
+            </td>
+            </tr>
+
+            <tr>
+                <td><label for="Nun">Telefono: </label></td>
+                <td>
+                    <input type="tel" name="tel" id="tel" placeholder="Telefono" required minlength="10" maxlength="10"></td>
+            </tr>
+
+            <tr>
+                <td><label for="fecha"></label> fecha nacimiento: </td>
+                <td>
+                    <input type="date" name="date" id="date" pattern="([0-3][0-9]|3[0-1])(\/|-)">
+                </td>
+            </tr>
+    
+        <td><input type="submit" value="Login"></td>
+    </table>
+    </form>
+</body>
+</html> 
